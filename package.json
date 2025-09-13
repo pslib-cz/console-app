@@ -16,7 +16,7 @@
     "node": ">=18"
   },
   "keywords": [],
-  "author": "",
+  "author": "Michal Stehlík",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
@@ -48,5 +48,8 @@
     ".vscode",
     "README.md",
     ".gitignore"
-  ]
+  ],
+  "publishConfig": { 
+    "access": "public" 
+  }
 }
