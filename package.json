@@ -1,6 +1,6 @@
 {
   "name": "@pslib/console-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Počáteční kód pro konzolové aplikace v Typescriptu",
   "scripts": {
     "dev": "ts-node-dev --respawn --clear src/index.ts",
