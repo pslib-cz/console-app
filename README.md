@@ -54,8 +54,12 @@ npm start
 
 ## Ladění ve VS Code
 
-1. Otevřeme složku projektu ve VS Code.
-2. F5 a vybereme jednu z předpřipravených konfigurací:
+### Hot-Reload
+1. V terminálu spustíme *npm run dev:debug* (spustí app s Node inspectorem na portu 9229)
+2. Ve VS Code stiskněte F5 a vyberte Attach (ts-node-dev).
+
+### Jednorázové spuštění
+1. F5 a vybereme jednu z předpřipravených konfigurací:
     - Run (ts-node) – spouští přímo .ts.
     - Run (compiled JS) – před spuštěním přeloží do dist/ a pustí .js.
 Breakpointy fungují v obou režimech.
