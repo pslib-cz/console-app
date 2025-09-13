@@ -1,0 +1,38 @@
+{
+  "name": "@pslib/console-app",
+  "version": "0.1.0",
+  "description": "Počáteční kód pro konzolové aplikace v Typescriptu",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node --files src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/readline-sync": "^1.4.8",
+    "prettier": "^3.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2",
+    "vitest": "^2.0.5"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pslib-cz/console-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pslib-cz/console-app/issues"
+  },
+  "homepage": "https://github.com/pslib-cz/console-app#readme",
+  "files": ["src", "tsconfig.json", "vitest.config.ts", ".prettierrc.json", ".vscode", "README.md"]
+}
