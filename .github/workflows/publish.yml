@@ -21,6 +21,10 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           cache: 'npm'
 
+      - run: npm config set //registry.npmjs.org/:_authToken=$GITHUB_TOKEN
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - run: npm ci
       - run: npm run typecheck --if-present
       - run: npm test --if-present
@@ -40,9 +44,9 @@ jobs:
 
       - name: Publish
         if: steps.exists.outcome == 'failure'
-        run: npm publish --access public
         env:
           NPM_CONFIG_PROVENANCE: 'true'
+        run: npm publish --access public
 
       - name: Info
         if: steps.exists.outcome == 'success'
