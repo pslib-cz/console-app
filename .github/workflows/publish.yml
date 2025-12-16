@@ -40,9 +40,9 @@ jobs:
 
       - name: Publish
         if: steps.exists.outcome == 'failure'
+        run: npm publish --access public
         env:
           NPM_CONFIG_PROVENANCE: 'true'
-        run: npm publish --access public
 
       - name: Info
         if: steps.exists.outcome == 'success'
