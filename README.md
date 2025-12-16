@@ -1,6 +1,6 @@
 # TypeScript konzolová aplikace (šablona PSLIB)
 
-Šablona pro **konzolovou aplikaci v TypeScriptu** – připravené skripty, hot-reload přes `ts-node-dev`, Prettier a ladění ve VS Code.
+Šablona pro **konzolovou aplikaci v TypeScriptu** – připravené skripty, hot-reload přes `tsx`, Prettier a ladění ve VS Code.
 
 ---
 
@@ -56,7 +56,7 @@ npm start
 
 ### Hot-Reload
 1. V terminálu spustíme *npm run dev:debug* (spustí app s Node inspectorem na portu 9229)
-2. Ve VS Code stiskněte F5 a vyberte Attach (ts-node-dev).
+2. Ve VS Code stiskněte F5 a vyberte Attach (tsx).
 
 ### Jednorázové spuštění
 1. F5 a vybereme jednu z předpřipravených konfigurací:
