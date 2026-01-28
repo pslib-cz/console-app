@@ -1,10 +1,14 @@
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { askNumber, askString, askBoolean } from './inputs';
 import readlineSync from 'readline-sync';
 
 vi.mock('readline-sync');
 
 describe('Input functions', () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+  });
+
   describe('askNumber', () => {
     it('askNumber existuje a je funkce', () => {
       expect(typeof askNumber).toBe('function');
