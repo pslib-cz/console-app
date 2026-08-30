@@ -1,6 +1,6 @@
 {
   "name": "@pslib/console-app",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Počáteční kód pro konzolové aplikace v Typescriptu",
   "scripts": {
     "dev": "tsx watch src/index.ts",
@@ -14,7 +14,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   },
   "keywords": [],
   "author": "Michal Stehlík",
@@ -44,7 +44,7 @@
   "files": [
     "src",
     "tsconfig.json",
-    "vitest.config.ts",
+    "vitest.config.mts",
     ".prettierrc.json",
     ".vscode",
     "README.md",
